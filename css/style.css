@@ -1,0 +1,70 @@
+:root{
+    --color-white: #FFFFFF;
+    --color-black-1: #000000;
+    --color-black-2: #010002;
+    --color-black-3: #424242;
+    --color-black-4: rgba(0, 0, 0, 0.5);
+    --color-gray-1: #EBECF2;
+    --color-gray-2: #939393;
+    --color-gray-3: #E9EAF0;
+    --color-gray-4: #F9F9F9;
+    --color-gray-5: #8E8AAC;
+    --color-gray-6: #D6D1F9;
+    --color-gray-7: #534A5C;
+    --color-gray-8: #232323;
+    --color-gray-9: #1C1D1F;
+    --color-gray-10: #818193;
+    --color-gray-11: #F2F2F5;
+    --color-blue-1:  #7866EC;
+    --color-purple-1: #8324E4;
+    --color-purple-2: #871CF3;
+    --color-text-no-active: rgba(255, 255, 255, 0.7);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'SF Pro';
+}
+
+a{
+    text-decoration: 0;
+}
+
+input, textarea, button{
+    font-family: 'SF Pro';
+}
+
+input:focus, textarea:focus, a:focus, button:focus{
+    outline: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    background-color: var(--color-blue-1);
+    min-height: 100vh;
+    position: relative;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.opacity-zero{
+    opacity: 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortalNew</title>
+
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/profile/profile.css">
+</head>
+<body data-page="profile">
+    <div class="wrapper">
+        <button class="bell">
+            <div class="bell-count">4</div>
+            <svg class="bell-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.5556 32.6735C22.1555 32.5466 25.8109 32.5466 26.4108 32.6735C26.9237 32.7919 27.4782 33.0687 27.4782 33.673C27.4484 34.2483 27.1109 34.7583 26.6446 35.0822C26.0399 35.5536 25.3303 35.8521 24.5885 35.9597C24.1782 36.0128 23.7751 36.014 23.3792 35.9597C22.6361 35.8521 21.9265 35.5536 21.3231 35.081C20.8555 34.7583 20.518 34.2483 20.4882 33.673C20.4882 33.0687 21.0428 32.7919 21.5556 32.6735ZM24.0541 12C26.5503 12 29.1001 13.1844 30.6147 15.1496C31.5975 16.415 32.0483 17.6792 32.0483 19.6444V20.1556C32.0483 21.6627 32.4466 22.551 33.3232 23.5747C33.9875 24.3289 34.1998 25.297 34.1998 26.3472C34.1998 27.3963 33.8551 28.3922 33.1646 29.2007C32.2606 30.17 30.9857 30.7888 29.6845 30.8964C27.7989 31.0571 25.9122 31.1925 24.0004 31.1925C22.0874 31.1925 20.2019 31.1115 18.3163 30.8964C17.014 30.7888 15.739 30.17 14.8362 29.2007C14.1457 28.3922 13.7998 27.3963 13.7998 26.3472C13.7998 25.297 14.0133 24.3289 14.6764 23.5747C15.5804 22.551 15.9525 21.6627 15.9525 20.1556V19.6444C15.9525 17.626 16.4558 16.3062 17.4922 15.0142C19.0331 13.13 21.503 12 23.9467 12H24.0541Z" fill="white"/>
+            </svg>
+        </button>
+        <div class="nav-container">
+            <!-- navigationBlock -->
+        </div>
+        <div class="main">
+            <div class="content profile-content">
+                <div class="content-heading">
+                    <h3>Мой профиль</h3>
+                    <form action="#" class="search">
+                        <svg class="search__icon" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.739 2.5C17.109 2.5 21.477 6.868 21.477 12.238C21.477 14.7715 20.5047 17.0823 18.9136 18.8165L22.0444 21.9407C22.3374 22.2337 22.3384 22.7077 22.0454 23.0007C21.8994 23.1487 21.7064 23.2217 21.5144 23.2217C21.3234 23.2217 21.1314 23.1487 20.9844 23.0027L17.8159 19.843C16.1491 21.1778 14.0357 21.977 11.739 21.977C6.369 21.977 2 17.608 2 12.238C2 6.868 6.369 2.5 11.739 2.5ZM11.739 4C7.196 4 3.5 7.695 3.5 12.238C3.5 16.781 7.196 20.477 11.739 20.477C16.281 20.477 19.977 16.781 19.977 12.238C19.977 7.695 16.281 4 11.739 4Z"/>
+                        </svg>
+                        <input class="search__input" type="text" placeholder="Поиск по сайту...">
+                    </form>
+                </div>
+                <div class="content-wrapper">
+                    <div class="user-profile">
+                        <div class="user-info-container">
+                            <div class="user-photo-container">
+                                <img src="./img/profile/profile-user.png" class="user-photo">
+                            </div>
+                            <div class="user-info">
+                                <div class="user-heading">
+                                    <div class="user-about">
+                                        <div class="user-name">Кирилл Проскурин</div>
+                                        <div class="user-city">Россия, Калиниград</div>
+                                        <div class="user-role">UX/UI Designer</div>
+                                    </div>
+                                    <div class="user-links-container">
+                                        <button href="#" class="user-link" data-modal-window-open=".modal-widnow-weekend-request">
+                                            <svg class="user-link-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 6.66683H2M10.6667 1.3335V4.00016M5.33333 1.3335V4.00016M5.2 14.6668H10.8C11.9201 14.6668 12.4802 14.6668 12.908 14.4488C13.2843 14.2571 13.5903 13.9511 13.782 13.5748C14 13.147 14 12.5869 14 11.4668V5.86683C14 4.74672 14 4.18667 13.782 3.75885C13.5903 3.38252 13.2843 3.07656 12.908 2.88482C12.4802 2.66683 11.9201 2.66683 10.8 2.66683H5.2C4.0799 2.66683 3.51984 2.66683 3.09202 2.88482C2.71569 3.07656 2.40973 3.38252 2.21799 3.75885C2 4.18667 2 4.74672 2 5.86683V11.4668C2 12.5869 2 13.147 2.21799 13.5748C2.40973 13.9511 2.71569 14.2571 3.09202 14.4488C3.51984 14.6668 4.0799 14.6668 5.2 14.6668Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <p class="user-link-text">Заявка на выходные</p>
+                                        </button>
+                                        <a href="./edit-profile.html" class="user-link user-link-gray">
+                                            <svg class="user-link-icon user-link-icon-gray" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_916_863)">
+                                                <path d="M7.33301 2.66666H4.53301C3.4129 2.66666 2.85285 2.66666 2.42503 2.88464C2.0487 3.07639 1.74274 3.38235 1.55099 3.75867C1.33301 4.1865 1.33301 4.74655 1.33301 5.86666V11.4667C1.33301 12.5868 1.33301 13.1468 1.55099 13.5746C1.74274 13.951 2.0487 14.2569 2.42503 14.4487C2.85285 14.6667 3.4129 14.6667 4.53301 14.6667H10.133C11.2531 14.6667 11.8132 14.6667 12.241 14.4487C12.6173 14.2569 12.9233 13.951 13.115 13.5746C13.333 13.1468 13.333 12.5868 13.333 11.4667V8.66666M5.33299 10.6667H6.44935C6.77547 10.6667 6.93853 10.6667 7.09198 10.6298C7.22803 10.5972 7.35809 10.5433 7.47739 10.4702C7.61194 10.3877 7.72724 10.2724 7.95785 10.0418L14.333 3.66666C14.8853 3.11437 14.8853 2.21894 14.333 1.66666C13.7807 1.11437 12.8853 1.11437 12.333 1.66665L5.95783 8.04182C5.72723 8.27242 5.61193 8.38772 5.52947 8.52228C5.45637 8.64157 5.40249 8.77163 5.36983 8.90768C5.33299 9.06113 5.33299 9.22419 5.33299 9.55031V10.6667Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_916_863">
+                                                <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>                                    
+                                            <p class="user-link-text user-link-text-gray">Редактировать</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="user-more-container">
+                                    <div class="user-more-item">
+                                        <div class="user-more-heading">Дата рождения</div>
+                                        <div class="user-more-info">14 Июн 1999</div>
+                                    </div>
+                                    <div class="user-more-item">
+                                        <div class="user-more-heading">Стаж работы</div>
+                                        <div class="user-more-info">5 месяцев 6 дней</div>
+                                    </div>
+                                    <div class="user-more-item">
+                                        <div class="user-more-heading">О себе</div>
+                                        <div class="user-more-info">Играю в видеоигры, исследую Калининградскую область и путешествую по России.</div>
+                                    </div>
+                                </div>
+                                <div class="user-social-container">
+                                    <div class="user-social-item">
+                                        <img src="./img/profile/svg/mail.svg" class="user-social-logo">
+                                        <div class="user-mail-name">temp@temp.com</div>
+                                    </div>
+                                    <div class="user-social-item">
+                                        <img src="./img/profile/svg/Telegram.svg" class="user-social-logo">
+                                        <div class="user-tg-name">mister_mops</div>
+                                    </div>
+                                    <div class="user-social-item">
+                                        <img src="./img/profile/svg/Instagram.svg" class="user-social-logo">
+                                        <div class="user-inst-name">mister_mops_</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-progress-wrapper">
+                            <div class="user-progress-container">
+                                <!-- getUserProgress -->
+                                <!-- <div class="user-progress-item">
+                                    <div class="user-progress-heading">Проекты</div>
+                                    <div class="user-progress-info">Проектов пока нет</div>
+                                </div>
+                                <div class="user-progress-item">
+                                    <div class="user-progress-heading">Моя техника и ПО</div>
+                                    <div class="user-progress-info">Проектов пока нет</div>
+                                </div>
+                                <div class="user-progress-item">
+                                    <div class="user-progress-heading">Мой мерч</div>
+                                    <div class="user-progress-info">Полученный мерч не найден</div>
+                                </div>
+                                <div class="user-progress-item">
+                                    <div class="user-progress-heading">Мои книги</div>
+                                    <div class="user-progress-info">Выданные книги отсутствуют</div>
+                                </div> -->
+                            </div>
+                            <div class="user-progress-item">
+                                <div class="user-progress-heading">История должностей</div>
+                                <div class="user-progress-info user-progress-role-in-company">
+                                    <!-- getProgress -->
+                                    <!-- <div class="user-position">
+                                        <div class="user-progress-info-role">UX / UI Designer</div>
+                                        <div class="user-progress-info-date-start">12 Ноя 2022</div>
+                                        <div class="user-progress-info-date-finish">Настоящее время</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-window-container">
+            <div class="modal-window modal-widnow-weekend-request hidden">
+                <div class="weekend-requests-container">
+                    <div class="weekend-requests">
+                        <h4 class="weekend-requests-heading">Заявка на выходные</h4>
+                        <div class="weekend-requests-body">
+                            <div class="weekend-requests-tabs tabs" data-tab-container=".weekend-requests-tabs-container">
+                                <label for="dayoff" data-tab-initiator>
+                                    <input type="radio" id="dayoff" name="weekend-requests-tab" class="weekend-requests-input" checked>
+                                    <div class="weekend-requests-tab">DayOff</div>
+                                </label>
+                                <label for="vacation" data-tab-initiator>
+                                    <input type="radio" id="vacation" name="weekend-requests-tab" class="weekend-requests-input">
+                                    <div class="weekend-requests-tab">Отпуск</div>
+                                </label>
+                                <label for="hospital" data-tab-initiator>
+                                    <input type="radio" id="hospital" name="weekend-requests-tab" class="weekend-requests-input">
+                                    <div class="weekend-requests-tab">Больничный</div>
+                                </label>
+                            </div>
+                            <!-- Контейнер с табами -->
+                            <div class="weekend-requests-tabs-container">
+                                <!-- Первый таб -->
+                                <form class="weekend-requests-tab-item _active" data-tab-content>
+                                    <!-- До добавления календаря -->
+                                    <!-- <div class="weekend-requests-field-container" data-field-container>
+                                        <label class="weekend-requests-field-label">Имя фамилия</label>
+                                        <input type="text" value="24.02.2023" class="weekend-requests-field weekend-requests-pr" data-field>
+                                        <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                            
+                                        </button>
+                                    </div> -->
+                                    <div>
+                                        <div class="weekend-requests-field-container" data-field-container data-calendar-container>
+                                            <label class="weekend-requests-field-label">Планируемая дата</label>
+                                            <input type="text" maxlength="10" placeholder="Выберите дату" class="weekend-requests-field weekend-requests-pr" data-field>
+                                            <div class="calendar hidden"></div>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-cal weekend-requests-btn-pr" data-calendar-btn>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 6.66683H2M10.6667 1.3335V4.00016M5.33333 1.3335V4.00016M5.2 14.6668H10.8C11.9201 14.6668 12.4802 14.6668 12.908 14.4488C13.2843 14.2571 13.5903 13.9511 13.782 13.5748C14 13.147 14 12.5869 14 11.4668V5.86683C14 4.74672 14 4.18667 13.782 3.75885C13.5903 3.38252 13.2843 3.07656 12.908 2.88482C12.4802 2.66683 11.9201 2.66683 10.8 2.66683H5.2C4.0799 2.66683 3.51984 2.66683 3.09202 2.88482C2.71569 3.07656 2.40973 3.38252 2.21799 3.75885C2 4.18667 2 4.74672 2 5.86683V11.4668C2 12.5869 2 13.147 2.21799 13.5748C2.40973 13.9511 2.71569 14.2571 3.09202 14.4488C3.51984 14.6668 4.0799 14.6668 5.2 14.6668Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                            
+                                            </button>
+                                        </div>
+                                        <div class="weekend-requests-field-container">
+                                            <label class="weekend-requests-field-label">Причина (не обязательно)</label>
+                                            <textarea class="weekend-requests-field-textarea">Посетить концерт любимой группы</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="weekend-requests-buttons">
+                                        <input type="submit" class="weekend-requests-button weekend-requests-button-submit" value="Отправить данные">
+                                        <button type="button" class="weekend-requests-button" data-modal-widnow-cancel>Отмена</button>
+                                    </div>
+                                </form>
+                                <!-- Второй таб -->
+                                <form class="weekend-requests-tab-item" data-tab-content>
+                                    <!-- До добавления календаря -->
+                                    <!-- <div class="weekend-requests-field-container" data-field-container>
+                                        <label class="weekend-requests-field-label">Планируемая дата начала</label>
+                                        <input type="text" placeholder="Выберите дату" class="weekend-requests-field weekend-requests-pr" data-field>
+                                        <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                            
+                                        </button>
+                                    </div> -->
+                                    <!-- До добавления календаря -->
+                                    <!-- <div class="weekend-requests-field-container" data-field-container>
+                                        <label class="weekend-requests-field-label">Планируемая дата окончания</label>
+                                        <input type="text" value="24.02.2023" class="weekend-requests-field weekend-requests-pr" data-field>
+                                        <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                            
+                                        </button>
+                                    </div> -->
+                                    <div>
+                                        <div class="weekend-requests-field-container" data-field-container data-calendar-container>
+                                            <label class="weekend-requests-field-label">Планируемая дата начала</label>
+                                            <input type="text" maxlength="10" placeholder="Выберите дату" class="weekend-requests-field weekend-requests-pr" data-field>
+                                            <div class="calendar hidden"></div>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-cal weekend-requests-btn-pr" data-calendar-btn>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 6.66683H2M10.6667 1.3335V4.00016M5.33333 1.3335V4.00016M5.2 14.6668H10.8C11.9201 14.6668 12.4802 14.6668 12.908 14.4488C13.2843 14.2571 13.5903 13.9511 13.782 13.5748C14 13.147 14 12.5869 14 11.4668V5.86683C14 4.74672 14 4.18667 13.782 3.75885C13.5903 3.38252 13.2843 3.07656 12.908 2.88482C12.4802 2.66683 11.9201 2.66683 10.8 2.66683H5.2C4.0799 2.66683 3.51984 2.66683 3.09202 2.88482C2.71569 3.07656 2.40973 3.38252 2.21799 3.75885C2 4.18667 2 4.74672 2 5.86683V11.4668C2 12.5869 2 13.147 2.21799 13.5748C2.40973 13.9511 2.71569 14.2571 3.09202 14.4488C3.51984 14.6668 4.0799 14.6668 5.2 14.6668Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-pr hidden" data-btn-field-clean>
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                            
+                                            </button>
+                                        </div>
+                                        <div class="weekend-requests-field-container" data-field-container data-calendar-container>
+                                            <label class="weekend-requests-field-label">Планируемая дата окончания</label>
+                                            <input type="text" maxlength="10" placeholder="Выберите дату" class="weekend-requests-field weekend-requests-pr" data-field>
+                                            <div class="calendar hidden"></div>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-cal weekend-requests-btn-pr" data-calendar-btn>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 6.66683H2M10.6667 1.3335V4.00016M5.33333 1.3335V4.00016M5.2 14.6668H10.8C11.9201 14.6668 12.4802 14.6668 12.908 14.4488C13.2843 14.2571 13.5903 13.9511 13.782 13.5748C14 13.147 14 12.5869 14 11.4668V5.86683C14 4.74672 14 4.18667 13.782 3.75885C13.5903 3.38252 13.2843 3.07656 12.908 2.88482C12.4802 2.66683 11.9201 2.66683 10.8 2.66683H5.2C4.0799 2.66683 3.51984 2.66683 3.09202 2.88482C2.71569 3.07656 2.40973 3.38252 2.21799 3.75885C2 4.18667 2 4.74672 2 5.86683V11.4668C2 12.5869 2 13.147 2.21799 13.5748C2.40973 13.9511 2.71569 14.2571 3.09202 14.4488C3.51984 14.6668 4.0799 14.6668 5.2 14.6668Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                            
+                                            </button>
+                                        </div>
+                                        <div class="weekend-requests-message">
+                                            <img src="./img/profile/svg/alert-circle.svg">
+                                            <p>Вы истратили все отпускные дни в этом году, в следующий раз получить отпуск возможно с 01.01.2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="weekend-requests-buttons">
+                                        <input type="submit" class="weekend-requests-button weekend-requests-button-submit" value="Отправить данные">
+                                        <button type="button" class="weekend-requests-button" data-modal-widnow-cancel>Отмена</button>
+                                    </div>
+                                </form>
+                                <!-- Третий таб -->
+                                <form class="weekend-requests-tab-item" data-tab-content>
+                                    <div>
+                                        <div class="weekend-requests-field-container" data-field-container data-calendar-container>
+                                            <label class="weekend-requests-field-label">Дата начала</label>
+                                            <input type="text" maxlength="10" placeholder="Выберите дату" class="weekend-requests-field weekend-requests-pr" data-field>
+                                            <div class="calendar hidden"></div>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-cal weekend-requests-btn-pr" data-calendar-btn>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 6.66683H2M10.6667 1.3335V4.00016M5.33333 1.3335V4.00016M5.2 14.6668H10.8C11.9201 14.6668 12.4802 14.6668 12.908 14.4488C13.2843 14.2571 13.5903 13.9511 13.782 13.5748C14 13.147 14 12.5869 14 11.4668V5.86683C14 4.74672 14 4.18667 13.782 3.75885C13.5903 3.38252 13.2843 3.07656 12.908 2.88482C12.4802 2.66683 11.9201 2.66683 10.8 2.66683H5.2C4.0799 2.66683 3.51984 2.66683 3.09202 2.88482C2.71569 3.07656 2.40973 3.38252 2.21799 3.75885C2 4.18667 2 4.74672 2 5.86683V11.4668C2 12.5869 2 13.147 2.21799 13.5748C2.40973 13.9511 2.71569 14.2571 3.09202 14.4488C3.51984 14.6668 4.0799 14.6668 5.2 14.6668Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                            
+                                            </button>
+                                        </div>
+                                        <div class="weekend-requests-field-container" data-field-container data-calendar-container>
+                                            <label class="weekend-requests-field-label">Дата окончания</label>
+                                            <input type="text" maxlength="10" placeholder="Выберите дату" class="weekend-requests-field weekend-requests-pr" data-field>
+                                            <div class="calendar hidden"></div>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-cal weekend-requests-btn-pr" data-calendar-btn>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 6.66683H2M10.6667 1.3335V4.00016M5.33333 1.3335V4.00016M5.2 14.6668H10.8C11.9201 14.6668 12.4802 14.6668 12.908 14.4488C13.2843 14.2571 13.5903 13.9511 13.782 13.5748C14 13.147 14 12.5869 14 11.4668V5.86683C14 4.74672 14 4.18667 13.782 3.75885C13.5903 3.38252 13.2843 3.07656 12.908 2.88482C12.4802 2.66683 11.9201 2.66683 10.8 2.66683H5.2C4.0799 2.66683 3.51984 2.66683 3.09202 2.88482C2.71569 3.07656 2.40973 3.38252 2.21799 3.75885C2 4.18667 2 4.74672 2 5.86683V11.4668C2 12.5869 2 13.147 2.21799 13.5748C2.40973 13.9511 2.71569 14.2571 3.09202 14.4488C3.51984 14.6668 4.0799 14.6668 5.2 14.6668Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="weekend-requests-btn weekend-requests-btn-pr" data-btn-field-clean>
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.5557 7L7.55566 17M7.55566 7L17.5557 17" stroke="#B8B8CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                            
+                                            </button>
+                                        </div>
+                                        <div class="weekend-requests-field-container">
+                                            <div class="weekend-requests-field-label">Больничный лист</div>
+                                            <label for="medical-leave">
+                                                <div class="weekend-requests-medical-leave">
+                                                    <img src="./img/profile/svg/upload-03.svg">
+                                                    <p>Выберите файл</p>
+                                                </div>
+                                                <input type="file" accept=".jpg, .png, .jpeg" id="medical-leave">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="weekend-requests-buttons">
+                                        <input type="submit" class="weekend-requests-button weekend-requests-button-submit" value="Отправить данные">
+                                        <button type="button" class="weekend-requests-button" data-modal-widnow-cancel>Отмена</button>
+                                    </div> 
+                                </form>
+                            </div>
+                            <!-- Конец контейнера с табами -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

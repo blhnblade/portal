@@ -1,0 +1,9 @@
+@import url('./style.css');
+@import url('./common.css');
+@import url('./fonts/fonts.css');
+@import url('./main/sidebar.css');
+@import url('./main/main.css');
+@import url('./main/content.css');
+@import url('./main/right-block.css');
+@import url('./helpers.css');
+/* @import url('./profile/profile.css'); */

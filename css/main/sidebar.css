@@ -1,0 +1,266 @@
+.nav{
+    width: 223px;
+    background-color: var(--color-blue-1);
+    padding-top: 131px;
+    transition-property: width, min-width;
+    transition-duration: .15s;
+    position: relative;
+}
+
+.nav-no-active{
+    width: 88px;
+}
+
+.nav-no-active .nav-logo{
+    opacity: 0;
+}
+
+.nav-no-active .nav-logo-small{
+    opacity: 1;
+}
+
+.sidebar{
+    margin-bottom: 213px;
+}
+
+
+
+.avatar{
+    display: block;
+    width: 95.05px;
+    height: 95.05px;
+    margin: 0 auto 13px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition-property: width, height, border;
+    transition-duration: .15s;
+    cursor: pointer;
+}
+
+.avatar:hover{
+    border: 2px solid var(--color-white);
+}
+
+.avatar-minimized{
+    width: 48.29px;
+    height: 48.29px;
+}
+
+.avatar__img{
+    display: block;
+    position: absolute;
+    width: 85.21px;
+    height: 85.21px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: width, height;
+    transition-duration: .15s;
+    user-select: none;
+}
+
+.avatar__img-minimized{
+    width: 43.27px;
+    height: 43.27px;
+}
+
+.avatar__balance{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--color-black-3);
+    user-select: none;
+}
+
+.avatar__balance-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    column-gap: 4px;
+    padding: 1px 6px;
+    z-index: 2;
+    background-color: var(--color-white);
+    border-radius: 7px;
+    left: 50%;
+    bottom: -9px;
+    transform: translateX(-50%);
+}
+
+.avatar__icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.avatar__icon-container{
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.person{
+    margin-bottom: 69.91px;
+    transition-property: width;
+    transition-duration: .2s;
+    min-height: 148.04px;
+    position: relative;
+}
+
+.person-name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-white);
+    transition-property: opacity;
+    transition-duration: .15s;
+    user-select: none;
+}
+
+.person .menu__active-block{
+    top: 10px;
+    left: 0;
+    height: 26px;
+}
+
+.menu__item{
+    display: flex;
+}
+
+.menu__item:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.menu__text{
+    transition-property: opacity, color;
+    transition-duration: .15s;
+    color: var(--color-text-no-active);    
+    user-select: none;
+}
+
+
+.menu__text-active{
+    color: var(--color-white);
+}
+
+.menu__active-block{
+    width: 3px;
+    height: 100%;
+    background-color: var(--color-white);   
+    position: absolute; 
+    border-radius: 0px 6px 6px 0px;
+}
+
+.menu__link{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu__link:hover .menu__icon path{
+    fill-opacity: 1;
+}
+
+.menu__link:hover .menu__text{
+    color: var(--color-white);
+}
+
+.menu__choice{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.menu__icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu__icon path{
+    transition-property: fill-opacity;
+    transition-duration: .15s;
+}
+
+.menu__icon-container{
+    width: 24px;
+    height: 24px;
+    margin-right: 17px;
+}
+
+.menu__icon_active path{
+    fill-opacity: 1;
+}
+
+.nav-logo{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 1;
+    transition-property: width, opacity;
+    transition-duration: .2s;
+    user-select: none;
+}
+
+.nav-logo-container{
+    width: 90.82px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    transition-property: left;
+    transition-duration: .2s;
+}
+
+.nav-logo-container-no-active{
+    left: 50%;
+}
+
+.nav-logo-no-active{
+    width: 60%;
+}
+
+.nav-logo-small{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28.81px;
+    height: 46.11px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .15s;
+    user-select: none;
+}
+
+.arrow-container{
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.arrow-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: .15s;
+}
+
+.arrow-btn-reverse{
+    transform: rotateY(-180deg);
+}
+
+.arrow{
+    width: 100%;
+    user-select: none;
+}

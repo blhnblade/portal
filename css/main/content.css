@@ -1,0 +1,233 @@
+.content{
+    width: 100%;
+    padding: 47.5px 38px 52px 48px;
+    background-color: var(--color-gray-1);
+    border-radius: 36px 0 0 36px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.search-margin{
+    margin-bottom: 43.5px;
+}
+
+.search:hover .search__icon{
+    fill: #6A16BF;
+}
+
+.search__icon{
+    width: 24px;
+    height: 24px;
+    fill: var(--color-blue-1);
+    transition-property: fill;
+    transition-duration: .15s;
+}
+
+.search__input{
+    background: none;
+    border: none;
+    font-family: 'SF Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-gray-5);
+    user-select: none;
+}
+
+.welcome-message-container{
+    margin-bottom: 37px;
+}
+
+.welcome-message{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--color-gray-7);
+}
+
+.info-cards-container{
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.info-card{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 25%;
+    padding: 16px 16px 16px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: .2s;
+    min-height: 228px;
+    max-height: 228px;
+}
+
+.info-card:hover{
+    border: 2px solid rgba(135, 28, 243, 0.4);
+}
+
+.info-card:not(:last-child){
+    margin-right: 24px;
+}
+
+.info-card-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    min-height: 115px;
+    max-height: 115px;
+    user-select: none;
+}
+
+.info-card-heading{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-gray-8);
+    line-height: 21.48px;
+    margin-bottom: 5px;
+    /* Тестовое. Чтобы больше двух строк не выводилось */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.info-card-paragraph{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15.51px;
+    /* Тестовое. Чтобы больше двух строк не выводилось */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.info-card_1{
+    background-color: #AEF2A8;
+    border: 2px solid rgba(135, 28, 243, 0.1);
+}
+
+.info-card_1 .info-card-paragraph{
+    color: #0D6906;
+}
+
+.info-card_2{
+    background: #FFC7D5;
+    border: 2px solid rgba(135, 28, 243, 0.1);
+}
+
+.info-card_2 .info-card-paragraph{
+    color: #F13C6A;
+}
+
+.info-card_3{
+    background: #FFE793;
+    border: 2px solid rgba(135, 28, 243, 0.1);
+}
+
+.info-card_3 .info-card-paragraph{
+    color: #A07D00;
+}
+
+.info-card_4{
+    background: #F693FF;
+    border: 2px solid rgba(135, 28, 243, 0.1);
+}
+
+.info-card_4 .info-card-paragraph{
+    color: #A07D00;
+}
+
+.block-heading-container{
+    margin-bottom: 10px;
+}
+
+.block-heading{
+    color: var(--color-gray-7);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 46px;
+    user-select: none;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    min-height: 420px;
+    max-height: 420px;
+    padding: 8px;
+    cursor: pointer;    
+    background: #FFFFFF;
+    border: 2px solid rgba(135, 28, 243, 0.1);
+    border-radius: 16px;
+    transition-property: border;
+    transition-duration: .2s;
+}
+
+.card:hover .card-heading{
+    color: var(--color-purple-1);
+}
+
+.card-img-container{
+    width: 100%;
+    height: 264px;
+    min-height: 264px;
+    max-height: 264px;
+    margin-bottom: 16px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+}
+
+.card-text-container{
+    padding: 16px 20px 28px;;
+
+}
+
+.card-date-container{
+    margin-bottom: 8px;
+}
+
+.card-date{
+    word-wrap: break-word;
+    color: var(--color-gray-2);
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-heading{
+    word-wrap: break-word;
+    color: var(--color-black-1);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    transition-property: color;
+    transition-duration: .15s;
+    /* Тествое. Чтобы больше двух строк не выводилось */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

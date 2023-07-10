@@ -1,0 +1,319 @@
+.right-block{
+    position: relative;
+    width: 377px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-4);
+    padding: 115px 33px;
+}
+
+.survey{
+    padding: 24px 16px;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+}
+
+.survey__heading-container{
+    margin-bottom: 16px;
+}
+
+.survey__heading{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--color-black-2);
+}
+
+.survey__text-container{
+    margin-bottom: 16px;
+}
+
+.survey__text{
+    color: var(--color-black-1);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.survey__answers{
+    margin-bottom: 34px;
+    overflow-y: auto;
+}
+
+.survey__item:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.survey__button{
+    display: block;
+    background-color: var(--color-purple-2);
+    border: none;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: .15s;
+}
+
+.survey__button:hover{
+    background-color: #6A16BF;
+}
+
+.survey-radio-btn:checked + .surve__label .surve__checkbox{
+    border: 2px solid var(--color-purple-1);
+}
+
+.survey-radio-btn:checked + .surve__label .surve__checkbox-inside{
+    background-color: var(--color-purple-1);
+}
+
+.surve__label{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+}
+
+.surve__checkbox{
+    display: block;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    border: 2px solid #B8B8CD;
+    position: relative;
+    transition-property: border;
+    transition-duration: .15s;
+}
+
+.surve__checkbox-inside{
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: background-color;
+    transition-duration: .15s;
+}
+
+
+.events{
+    padding: 24px 27px 55px 16px;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.02);
+    border-radius: 16px;
+    position: relative;
+}
+
+.events__heading-container{
+    margin-bottom: 10px;
+}
+
+.events__heading{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: var(--color-black-2);
+    user-select: none;
+}
+
+.events__buttons{
+    display: flex;
+    column-gap: 4px;
+    margin-bottom: 24px;
+}
+
+.events__button{
+    display: block;
+    border: none;
+    background-color: var(--color-gray-3);
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: var(--color-blue-1);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: .15s;
+    user-select: none;
+}
+
+.events__button:hover{
+    background-color: #E7E9F7;
+}
+
+.events__button_active{
+    background-color: var(--color-blue-1)!important;
+    color: var(--color-white);
+}
+
+.events__count{
+    color:#0000004D;
+}
+
+.events__count_active{
+    color: #FFFFFF80;
+}
+
+.events__message{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+
+.events__message:not(:last-child){
+    margin-bottom: 25px;
+}
+
+.events__user-photo{
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.events__user-block{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-blue-1);
+}
+
+.events__img{
+    display: block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    user-select: none;
+}
+
+.events__message-heading{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    color: var(--color-black-1);
+}
+
+.events__message-time{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--color-black-4);
+    letter-spacing: -0.01em;
+}
+
+.events__message-info{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--color-black-1);
+    letter-spacing: -0.01em;
+    max-width: 165px;
+}
+
+.events__info-container{
+    margin-bottom: 6px;
+}
+
+.events__info{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.events__link-container{
+    position: absolute;
+    bottom: 27px;
+    left: 16px;
+}
+
+.events__link{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: var(--color-blue-1);
+}
+
+.events__link:hover{
+    color: var(--color-purple-2);
+}
+
+.events__link:hover .events__link-arrow{
+    stroke: var(--color-purple-2);
+}
+
+.events__link-text{
+    user-select: none;
+}
+
+.events__link-arrow{
+    width: 16px;
+    height: 12px;
+    display: block;
+    stroke: var(--color-blue-1);
+    transition-property: stroke;
+    transition-duration: .15s;
+}
+
+.bell{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 36px;
+    right: 34px;
+    border-radius: 50%;
+    background-color: var(--color-blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: .15s;
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+}
+
+.bell-icon{
+    width: 48px;
+    height: 48px;
+    fill: var(--color-white);
+}
+
+.bell-count{
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-black-1);
+    background-color: #FFD33C;
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+
+.bell:hover{
+    background-color: #6A16BF;
+}
+
